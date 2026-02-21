@@ -1,0 +1,52 @@
+# Bare Metal Keypad Calculator using Custom LCD Driver (AVR)
+
+A fully functional calculator implemented in bare-metal Embedded C using direct register manipulation, without relying on external libraries. The system interfaces a 4x4 matrix keypad and an HD44780 LCD using custom low-level drivers.
+
+This project demonstrates firmware-level hardware control, driver development, and peripheral interfacing.
+
+---
+
+## Features
+
+* Bare-metal register level programming  
+* Custom LCD driver implementation  
+* Matrix keypad scanning without libraries  
+* Supports operations:
+  - Addition (+)
+  - Subtraction (−)
+  - Multiplication (*)
+  - Division (/)
+
+* Floating point calculation support  
+* Result displayed on LCD  
+
+---
+
+## Hardware Used
+
+* Microcontroller: AVR (ATmega2560 / ATmega series)  
+* LCD: HD44780 16x2 LCD  
+* Input: 4x4 Matrix Keypad  
+
+---
+
+## System Architecture
+
+Keypad → MCU GPIO → Calculation Logic → LCD Driver → LCD Display
+
+---
+
+## Low Level Concepts Used
+
+* Memory mapped I/O  
+* Register manipulation  
+* GPIO configuration  
+* Matrix keypad scanning  
+* LCD command/data interface  
+* Driver abstraction  
+
+---
+
+## Key Technical Highlights
+
+### LCD Driver written from scratch
